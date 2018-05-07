@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './Home.sass';
+import '../styles/Home.sass';
 
 class Home extends React.Component {
   static propTypes = {

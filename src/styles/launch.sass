@@ -1,0 +1,50 @@
+@import "/variables"
+@import "/mixins"
+
+.insider
+    display: flex;
+    justify-content: space-between;
+    
+    
+.leftcont
+    height: 100%;
+    margin: 30px 20px;
+    max-width: 50%;
+    text-transform: uppercase;
+    
+    &__header--first
+        color: $light-grey;
+        
+    &__header--second
+        margin: 0;
+        font-size: 30px;
+        
+    &__header--third
+        margin: 0;
+        font-size: 10px;
+        
+.rightcont
+    max-width: 50%;
+    margin: 30px 20px;
+    
+    &__para
+        margin-bottom: 30px;
+        color: $footer-background-color;
+        
+.jsontable
+    @include flex-centering;
+    text-transform: uppercase;
+    justify-content: space-around;
+    font-size: 10px;
+    
+    &__colone, &__coltwo
+        list-style: none;
+        padding-left: 20px;
+        border-left: 2px dotted $light-grey;
+        width: 50%;
+        
+    &__item
+        color: $light-grey;
+        
+    &__data
+        color: $header-background-color;
